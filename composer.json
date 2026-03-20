@@ -1,10 +1,15 @@
 {
     "name": "hexlet/code",
+    "bin": [
+        "bin/brain-games"
+    ],
     "type": "project",
     "authors": [
         {
             "name": "XXMargoRitaXX"
         }
     ],
+    "description": "hexlet php-package",
+    "license": "MIT",
     "require": {}
 }
