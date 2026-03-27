@@ -8,4 +8,14 @@
 
 ### Use:
 
+```sh
+make brain-even
+```
+
 [![asciicast](https://asciinema.org/a/6KR0hHjspNunvLa9.svg)](https://asciinema.org/a/6KR0hHjspNunvLa9)
+
+```sh
+make brain-calc
+```
+
+[![asciicast](https://asciinema.org/a/wsofxVkFKPKGRWMw.svg)](https://asciinema.org/a/wsofxVkFKPKGRWMw)

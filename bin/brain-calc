@@ -2,8 +2,8 @@
 
 <?php
 
-use function BrainGames\Cli\greet;
+use function BrainGames\BrainCalc\run;
 
 require_once __DIR__ . '/../src/autoload.php';
 
-greet();
+run();
