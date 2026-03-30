@@ -3,7 +3,8 @@
     "bin": [
         "bin/brain-games",
         "bin/brain-even",
-        "bin/brain-calc"
+        "bin/brain-calc",
+        "bin/brain-gcd"
     ],
     "type": "project",
     "authors": [
@@ -19,7 +20,8 @@
         "src/Engine.php",
         "src/autoload.php",
         "src/Games/BrainEven.php",
-        "src/Games/BrainCalc.php"
+        "src/Games/BrainCalc.php",
+        "src/Games/BrainGcd.php"
         ]
     },
     "require": {

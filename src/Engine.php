@@ -23,13 +23,10 @@ function runGame(string $gameRules, callable $generateGameDataFunc): void
         if ($answer === (string) $correctAnswer) {
             line('Correct!');
         } else {
-            line("'{$answer}' is wrong answer ;(. Correct answer was '{$correctAnswer}'." . PHP_EOL
-                . "Let's try again, {$userName}!");
-            break;
+            exit("'{$answer}' is wrong answer ;(. Correct answer was '{$correctAnswer}'." . PHP_EOL
+                . "Let's try again, {$userName}!" . PHP_EOL);
         }
     }
 
-    if ($currentRound > ROUNDS_COUNT) {
-        line("Congratulations, {$userName}!");
-    }
+    line("Congratulations, {$userName}!");
 }

@@ -19,3 +19,9 @@ make brain-calc
 ```
 
 [![asciicast](https://asciinema.org/a/wsofxVkFKPKGRWMw.svg)](https://asciinema.org/a/wsofxVkFKPKGRWMw)
+
+```sh
+make brain-gcd
+```
+
+[![asciicast](https://asciinema.org/a/9lYOuMrfXXkqVKED.svg)](https://asciinema.org/a/9lYOuMrfXXkqVKED)
