@@ -4,8 +4,9 @@ namespace BrainGames\BrainGcd;
 
 use function BrainGames\Engine\runGame;
 
-const MIN_RANDOM_INT = 1;
-const MAX_RANDOM_INT = 100;
+use const BrainGames\Engine\MAX_RANDOM_INT;
+
+const MIN_INT_FOR_GCD = 1;
 
 function getGameRules(): string
 {
@@ -31,8 +32,8 @@ function gcd(int $number1, int $number2): int
 
 function generateGameData(): array
 {
-    $number1 = rand(MIN_RANDOM_INT, MAX_RANDOM_INT);
-    $number2 = rand(MIN_RANDOM_INT, MAX_RANDOM_INT);
+    $number1 = rand(MIN_INT_FOR_GCD, MAX_RANDOM_INT);
+    $number2 = rand(MIN_INT_FOR_GCD, MAX_RANDOM_INT);
 
     $question = "{$number1} {$number2}";
     $correctAnswer = gcd($number1, $number2);

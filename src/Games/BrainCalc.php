@@ -4,8 +4,9 @@ namespace BrainGames\BrainCalc;
 
 use function BrainGames\Engine\runGame;
 
-const MIN_RANDOM_INT = 0;
-const MAX_RANDOM_INT = 100;
+use const BrainGames\Engine\MAX_RANDOM_INT;
+use const BrainGames\Engine\MIN_RANDOM_INT;
+
 const MAX_INT_FOR_MULT = 10;
 
 function getRules(): string

@@ -1,3 +1,5 @@
+## Brain Games
+
 ### Hexlet tests and linter status:
 
 [![Actions Status](https://github.com/XXMargoRitaXX/php-project-45/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/XXMargoRitaXX/php-project-45/actions)
@@ -5,6 +7,15 @@
 [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=XXMargoRitaXX_php-project-45&metric=bugs)](https://sonarcloud.io/summary/new_code?id=XXMargoRitaXX_php-project-45)
 [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=XXMargoRitaXX_php-project-45&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=XXMargoRitaXX_php-project-45)
 [![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=XXMargoRitaXX_php-project-45&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=XXMargoRitaXX_php-project-45)
+
+### Description:
+
+"Brain Games" is a collection of five console games based on popular mobile brain training apps. Each game asks questions that require correct answers. After three correct answers, the game is completed. Incorrect answers end the game and require a repeat playthrough. Games:
+* Identifying an even number
+* Calculator. Arithmetic expressions to be calculated
+* Identifying the greatest common divisor
+* Progression. Finding missing numbers in a sequence
+* Identifying a prime number
 
 ### Use:
 
@@ -25,3 +36,9 @@ make brain-gcd
 ```
 
 [![asciicast](https://asciinema.org/a/9lYOuMrfXXkqVKED.svg)](https://asciinema.org/a/9lYOuMrfXXkqVKED)
+
+```sh
+make brain-progression
+```
+
+[![asciicast](https://asciinema.org/a/y7BmITm2Y3M4v2YC.svg)](https://asciinema.org/a/y7BmITm2Y3M4v2YC)

@@ -4,8 +4,8 @@ namespace BrainGames\BrainEven;
 
 use function BrainGames\Engine\runGame;
 
-const MIN_RANDOM_INT = 0;
-const MAX_RANDOM_INT = 100;
+use const BrainGames\Engine\MAX_RANDOM_INT;
+use const BrainGames\Engine\MIN_RANDOM_INT;
 
 function getGameRules(): string
 {

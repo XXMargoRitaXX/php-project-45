@@ -6,6 +6,8 @@ use function BrainGames\Cli\greet;
 use function cli\line;
 use function cli\prompt;
 
+const MAX_RANDOM_INT = 100;
+const MIN_RANDOM_INT = 0;
 const ROUNDS_COUNT = 3;
 
 function runGame(string $gameRules, callable $generateGameDataFunc): void
