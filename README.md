@@ -1,4 +1,4 @@
-## Brain Games
+<h1 align='center'>Brain Games</h1>
 
 ### Hexlet tests and linter status:
 
@@ -11,34 +11,29 @@
 ### Description:
 
 "Brain Games" is a collection of five console games based on popular mobile brain training apps. Each game asks questions that require correct answers. After three correct answers, the game is completed. Incorrect answers end the game and require a repeat playthrough. Games:
-* Identifying an even number
-* Calculator. Arithmetic expressions to be calculated
-* Identifying the greatest common divisor
-* Progression. Finding missing numbers in a sequence
-* Identifying a prime number
+* Identifying an even number (<a href="https://asciinema.org/a/6KR0hHjspNunvLa9" target="_blank">Demo</a>)
+* Calculator. Arithmetic expressions to be calculated (<a href="https://asciinema.org/a/wsofxVkFKPKGRWMw" target="_blank">Demo</a>)
+* Identifying the greatest common divisor (<a href="https://asciinema.org/a/9lYOuMrfXXkqVKED" target="_blank">Demo</a>)
+* Progression. Finding missing numbers in a sequence (<a href="https://asciinema.org/a/y7BmITm2Y3M4v2YC" target="_blank">Demo</a>)
+* Identifying a prime number (<a href="https://asciinema.org/a/DqwMaFdgW8TQG4zE" target="_blank">Demo</a>)
 
-### Use:
+ ### Requirements:
 
+ * Linux, macOS, WSL
+ * Git
+ * PHP >= 8.3.0
+ * Composer
+ * Make
+ 
+ ### Installation:
 ```sh
-make brain-even
+ git clone https://github.com/XXMargoRitaXX/php-project-45.git
 ```
 
-[![asciicast](https://asciinema.org/a/6KR0hHjspNunvLa9.svg)](https://asciinema.org/a/6KR0hHjspNunvLa9)
-
 ```sh
-make brain-calc
+ cd php-project-45
 ```
 
-[![asciicast](https://asciinema.org/a/wsofxVkFKPKGRWMw.svg)](https://asciinema.org/a/wsofxVkFKPKGRWMw)
-
 ```sh
-make brain-gcd
-```
-
-[![asciicast](https://asciinema.org/a/9lYOuMrfXXkqVKED.svg)](https://asciinema.org/a/9lYOuMrfXXkqVKED)
-
-```sh
-make brain-progression
-```
-
-[![asciicast](https://asciinema.org/a/y7BmITm2Y3M4v2YC.svg)](https://asciinema.org/a/y7BmITm2Y3M4v2YC)
+ make install
+ ```

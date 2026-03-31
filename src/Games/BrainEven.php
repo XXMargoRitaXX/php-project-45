@@ -7,11 +7,7 @@ use function BrainGames\Engine\runGame;
 use const BrainGames\Engine\MAX_RANDOM_INT;
 use const BrainGames\Engine\MIN_RANDOM_INT;
 
-function getGameRules(): string
-{
-    $rules = 'Answer "yes" if the number is even, otherwise answer "no".';
-    return $rules;
-}
+const RULES = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 function isEven(int $number): bool
 {
@@ -27,6 +23,5 @@ function generateGameData(): array
 
 function run(): void
 {
-    $gameRules = getGameRules();
-    runGame($gameRules, fn() => generateGameData());
+    runGame(RULES, fn() => generateGameData());
 }

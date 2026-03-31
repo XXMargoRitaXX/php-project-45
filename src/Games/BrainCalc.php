@@ -8,12 +8,7 @@ use const BrainGames\Engine\MAX_RANDOM_INT;
 use const BrainGames\Engine\MIN_RANDOM_INT;
 
 const MAX_INT_FOR_MULT = 10;
-
-function getRules(): string
-{
-    $rules = 'What is the result of the expression?';
-    return $rules;
-}
+const RULES = 'What is the result of the expression?';
 
 function calculate(int $number1, int $number2, string $operation): int
 {
@@ -45,6 +40,5 @@ function generateGameData(): array
 
 function run(): void
 {
-    $gameRules = getRules();
-    runGame($gameRules, fn() => generateGameData());
+    runGame(RULES, fn() => generateGameData());
 }

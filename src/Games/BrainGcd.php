@@ -7,12 +7,7 @@ use function BrainGames\Engine\runGame;
 use const BrainGames\Engine\MAX_RANDOM_INT;
 
 const MIN_INT_FOR_GCD = 1;
-
-function getGameRules(): string
-{
-    $rules = 'Find the greatest common divisor of given numbers.';
-    return $rules;
-}
+const RULES = 'Find the greatest common divisor of given numbers.';
 
 function gcd(int $number1, int $number2): int
 {
@@ -43,6 +38,5 @@ function generateGameData(): array
 
 function run(): void
 {
-    $gameRules = getGameRules();
-    runGame($gameRules, fn() => generateGameData());
+    runGame(RULES, fn() => generateGameData());
 }

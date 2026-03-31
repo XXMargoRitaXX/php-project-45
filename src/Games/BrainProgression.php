@@ -9,12 +9,7 @@ use const BrainGames\Engine\MIN_RANDOM_INT;
 
 const MAX_INT_FOR_STEP = 10;
 const PROG_ELEMENTS_COUNT = 10;
-
-function getGameRules(): string
-{
-    $rules = 'What number is missing in the progression?';
-    return $rules;
-}
+const RULES = 'What number is missing in the progression?';
 
 function generateProgression(int $startNum, int $step, int $count): array
 {
@@ -44,6 +39,5 @@ function generateGameData(): array
 
 function run(): void
 {
-    $gameRules = getGameRules();
-    runGame($gameRules, fn() => generateGameData());
+    runGame(RULES, fn() => generateGameData());
 }
