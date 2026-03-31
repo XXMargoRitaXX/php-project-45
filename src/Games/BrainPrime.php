@@ -11,22 +11,24 @@ const RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 function isPrime(int $number): bool
 {
+    $isPrime = true;
+
     if ($number < 2) {
-        return false;
+        $isPrime = false;
     } elseif ($number === 2) {
-        return true;
+        $isPrime = true;
     } elseif ($number % 2 === 0) {
-        return false;
+        $isPrime = false;
     } else {
         $count = intval(ceil(sqrt($number)));
         for ($i = 3; $i <= $count; $i += 2) {
             if ($number % $i === 0) {
-                return false;
+                $isPrime = false;
             }
         }
     }
 
-    return true;
+    return $isPrime;
 }
 
 function generateGameData(): array

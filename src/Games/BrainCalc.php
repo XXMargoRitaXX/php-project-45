@@ -16,6 +16,7 @@ function calculate(int $number1, int $number2, string $operation): int
         '+' => $number1 + $number2,
         '-' => $number1 - $number2,
         '*' => $number1 * $number2,
+        default => throw new \InvalidArgumentException("Unknown operation: {$operation}"),
     };
 }
 

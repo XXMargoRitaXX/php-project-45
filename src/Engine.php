@@ -25,8 +25,9 @@ function runGame(string $gameRules, callable $generateGameDataFunc): void
         if ($answer === (string) $correctAnswer) {
             line('Correct!');
         } else {
-            exit("'{$answer}' is wrong answer ;(. Correct answer was '{$correctAnswer}'." . PHP_EOL
-                . "Let's try again, {$userName}!" . PHP_EOL);
+            line("'{$answer}' is wrong answer ;(. Correct answer was '{$correctAnswer}'.");
+            line("Let's try again, {$userName}!");
+            exit();
         }
     }
 
