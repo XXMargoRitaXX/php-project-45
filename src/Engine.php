@@ -2,17 +2,16 @@
 
 namespace BrainGames\Engine;
 
-use function BrainGames\Cli\greet;
 use function cli\line;
 use function cli\prompt;
 
-const MAX_RANDOM_INT = 100;
-const MIN_RANDOM_INT = 0;
 const ROUNDS_COUNT = 3;
 
 function runGame(string $gameRules, callable $generateGameDataFunc): void
 {
-    $userName = greet();
+    line('Welcome to the Brain Games!');
+    $userName = prompt('May I have your name?');
+    line("Hello, {$userName}!");
 
     line($gameRules);
 
@@ -22,13 +21,13 @@ function runGame(string $gameRules, callable $generateGameDataFunc): void
         line("Question: {$question}");
         $answer = prompt('Your answer');
 
-        if ($answer === (string) $correctAnswer) {
-            line('Correct!');
-        } else {
+        if ($answer !== (string) $correctAnswer) {
             line("'{$answer}' is wrong answer ;(. Correct answer was '{$correctAnswer}'.");
             line("Let's try again, {$userName}!");
-            exit();
+            return;
         }
+
+        line('Correct!');
     }
 
     line("Congratulations, {$userName}!");
