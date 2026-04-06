@@ -10,7 +10,7 @@ const RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 function run(): void
 {
-    $generateGameDataFunc = function (): array {
+    $generateGameDataFunc = static function (): array {
         $question = rand(MIN_RANDOM_INT, MAX_RANDOM_INT);
         $correctAnswer = isPrime($question) ? 'yes' : 'no';
         return [$question, $correctAnswer];

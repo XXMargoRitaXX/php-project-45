@@ -12,7 +12,7 @@ const RULES = 'What number is missing in the progression?';
 
 function run(): void
 {
-    $generateGameDataFunc = function (): array {
+    $generateGameDataFunc = static function (): array {
         $startNum = rand(MIN_RANDOM_INT, MAX_RANDOM_INT);
         $step = rand(MIN_RANDOM_INT, MAX_INT_FOR_STEP);
         $progression = [];

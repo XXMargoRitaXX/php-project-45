@@ -15,7 +15,7 @@ function runGame(string $gameRules, callable $generateGameDataFunc): void
 
     line($gameRules);
 
-    for ($currentRound = 1; $currentRound <= ROUNDS_COUNT; $currentRound++) {
+    for ($i = 1; $i <= ROUNDS_COUNT; $i++) {
         [$question, $correctAnswer] = $generateGameDataFunc();
 
         line("Question: {$question}");

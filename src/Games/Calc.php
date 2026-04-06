@@ -11,7 +11,7 @@ const RULES = 'What is the result of the expression?';
 
 function run(): void
 {
-    $generateGameDataFunc = function (): array {
+    $generateGameDataFunc = static function (): array {
         $operations = ['+', '-', '*'];
         $operationsCount = count($operations);
         $operation = $operations[rand(0, $operationsCount - 1)];

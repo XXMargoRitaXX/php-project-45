@@ -10,7 +10,7 @@ const RULES = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 function run(): void
 {
-    $generateGameDataFunc = function (): array {
+    $generateGameDataFunc = static function (): array {
         $question = rand(MIN_RANDOM_INT, MAX_RANDOM_INT);
         $correctAnswer = isEven($question) ? 'yes' : 'no';
         return [$question, $correctAnswer];

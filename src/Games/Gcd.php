@@ -10,7 +10,7 @@ const RULES = 'Find the greatest common divisor of given numbers.';
 
 function run(): void
 {
-    $generateGameDataFunc = function (): array {
+    $generateGameDataFunc = static function (): array {
         $number1 = rand(MIN_INT_FOR_GCD, MAX_RANDOM_INT);
         $number2 = rand(MIN_INT_FOR_GCD, MAX_RANDOM_INT);
 
